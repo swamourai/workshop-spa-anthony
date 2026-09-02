@@ -1,0 +1,14 @@
+name: 'Deploy'
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write # OIDC
+  contents: read # action checkout
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my first step
+        run: echo "Hello world!"
