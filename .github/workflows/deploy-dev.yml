@@ -9,6 +9,14 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: 
+      name: development
+      url: https://www.molotov.tv
     steps:
       - name: my first step
         run: echo "Hello world!"
+
+      - name: print variables
+        run: |
+          echo "my region: ${{ vars.AWS_REGION }}"
+

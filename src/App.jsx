@@ -6,7 +6,7 @@ const VERSION = 'v1' // on bumpe à v2 pendant la démo d'invalidation
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Welcome</h1>
       <p>
         build <strong>{VERSION}</strong>
       </p>
